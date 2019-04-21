@@ -743,6 +743,7 @@ http://kimbogrupol.com:25461/anita/1234/11943
 http://kimbogrupol.com:25461/anita/1234/13042
 #EXTINF:-1,CR| TV Sur 14
 http://kimbogrupol.com:25461/anita/1234/13041
+#EXTINF:1, group-title="CULTURA"
 #EXTINF:-1,CU| Animal Planet FHD - GL
 http://kimbogrupol.com:25461/anita/1234/16163
 #EXTINF:-1,CU| ANIMAL PLANET HD ( USA )
@@ -809,6 +810,7 @@ http://kimbogrupol.com:25461/anita/1234/17265
 http://kimbogrupol.com:25461/anita/1234/16678
 #EXTINF:-1,CU| TLC |UHD
 http://kimbogrupol.com:25461/anita/1234/17345
+#EXTINF:1, group-title="DEPORTES"
 #EXTINF:-1,DE| DirecTV Sports + - FA
 http://kimbogrupol.com:25461/anita/1234/16557
 #EXTINF:-1,DE| DirecTV Sports - FA
@@ -1055,6 +1057,7 @@ http://kimbogrupol.com:25461/anita/1234/13047
 http://kimbogrupol.com:25461/anita/1234/13050
 #EXTINF:-1,ES| Vega Baja TV
 http://kimbogrupol.com:25461/anita/1234/13046
+#EXTINF:1, group-title="INFANTIL"
 #EXTINF:-1,IF| BABYTV |UHD
 http://kimbogrupol.com:25461/anita/1234/17301
 #EXTINF:-1,IF| BOOMERANG |UHD
@@ -1343,6 +1346,7 @@ http://kimbogrupol.com:25461/anita/1234/16534
 http://kimbogrupol.com:25461/anita/1234/17719
 #EXTINF:-1,PR| TiVA TV PR -  CH
 http://kimbogrupol.com:25461/anita/1234/17724
+#EXTINF:1, group-title="MUSICA"
 #EXTINF:-1,Music:  Hip-Hop And R&B - CH
 http://kimbogrupol.com:25461/anita/1234/17878
 #EXTINF:-1,Music:  Rap
@@ -1381,6 +1385,7 @@ http://kimbogrupol.com:25461/anita/1234/17884
 http://kimbogrupol.com:25461/anita/1234/17892
 #EXTINF:-1,Music:  90s
 http://kimbogrupol.com:25461/anita/1234/17879
+#EXTINF:1, group-title="PELICULAS"
 #EXTINF:-1,The Revenant
 http://kimbogrupol.com:25461/movie/anita/1234/17183.mp4
 #EXTINF:-1,Tiempos violentos
