@@ -1,15 +1,15 @@
 #EXTM3U
-#EXTINF:-1,MX| Univision FHD - GL
+#EXTINF:-1,MX| Univision FHD - GL group-title="Mexico"
 http://kimbogrupol.com:25461/live/Luis/1234/17688.m3u8
-#EXTINF:-1,MX| Canal 5 FHD - GL
+#EXTINF:-1,MX| Canal 5 FHD - GL group-title="Mexico"
 http://kimbogrupol.com:25461/live/Luis/1234/17689.m3u8
-#EXTINF:-1,MX| AZTECA Mas - CH
+#EXTINF:-1,MX| AZTECA Mas - CH group-title="Mexico"
 http://kimbogrupol.com:25461/live/Luis/1234/17715.m3u8
-#EXTINF:-1,MX| Azteca UNO FHD - GL
+#EXTINF:-1,MX| Azteca UNO FHD - GL group-title="Mexico"
 http://kimbogrupol.com:25461/live/Luis/1234/16600.m3u8
-#EXTINF:-1,MX| Azteca Uno - GL
+#EXTINF:-1,MX| Azteca Uno - GL group-title="Mexico"
 http://kimbogrupol.com:25461/live/Luis/1234/17755.m3u8
-#EXTINF:-1,MX| Azteca 7 - GL
+#EXTINF:-1,MX| Azteca 7 - GL group-title="Mexico"
 http://kimbogrupol.com:25461/live/Luis/1234/17754.m3u8
 #EXTINF:-1,MX| Azteca 7 FHD. - GL
 http://kimbogrupol.com:25461/live/Luis/1234/16545.m3u8
