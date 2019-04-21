@@ -353,6 +353,7 @@ http://kimbogrupol.com:25461/anita/1234/17736
 http://kimbogrupol.com:25461/anita/1234/13040
 #EXTINF:-1,BL| RED ADVENIR Bolivia
 http://kimbogrupol.com:25461/anita/1234/7793
+#EXTINF:1, group-title="CINE"
 #EXTINF:-1,CI| FOX |UHD
 http://kimbogrupol.com:25461/anita/1234/17205
 #EXTINF:-1,CI| FOX FHD - GL
@@ -619,6 +620,7 @@ http://kimbogrupol.com:25461/anita/1234/17398
 http://kimbogrupol.com:25461/anita/1234/17399
 #EXTINF:-1,CI| Universo SD - FA
 http://kimbogrupol.com:25461/anita/1234/17404
+#EXTINF:1, group-title="CHILE"
 #EXTINF:-1,CL| 24 Horas HD - GL
 http://kimbogrupol.com:25461/anita/1234/16719
 #EXTINF:-1,CL| 24horas.cl play HD (Chile) |
