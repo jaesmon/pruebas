@@ -3,13 +3,14 @@
 <head>
     <title>Introduction to Web SQL</title>
     <script >
-    
+    alert(22)
     function getActiveEmail() {
   var activeSheet = SpreadsheetApp.getActiveSheet();
   var activeRow = .getActiveCell().getRow();
   var email = activeSheet.getRange(activeRow, 3).getValue();
 
   return email;
+        
 }
 
     </script>
