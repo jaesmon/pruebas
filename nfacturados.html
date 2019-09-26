@@ -1,45 +1,52 @@
 <!DOCTYPE html>
-<html>
-<style>
-table,th,td {
-  border : 1px solid black;
-  border-collapse: collapse;
-}
-th,td {
-  padding: 5px;
-}
-</style>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Introduction to Web SQL</title>
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        var myDBInstance = openDatabase('dbSibeeshPassion', '1.0', 'This is a client side database', 3 * 1024 * 1024);
+        //check whether the database is created or not.
+        if (!myDBInstance) {
+            alert('Oops, your database was not created');
+        }
+        else {
+            var version = myDBInstance.version;
+            //var name = "Sibi";
+            //var id = "1";
+            //var MailID = "sibikv4u@gmail.com";
+            myDBInstance.transaction(function (tran) {
+                tran.executeSql('CREATE TABLE IF NOT EXISTS Users (id unique, Name, MailID)');
+                //tran.executeSql('insert into Users (id, Name, MailID) values (?,?,?)', [id, name, MailID]);
+                tran.executeSql('insert into Users (id, Name, MailID) values (1, "Sibi","sibikv4u@gmail.com")');
+                tran.executeSql('insert into Users (id, Name, MailID) values (2, "Aji","ajaybhasy@gmail.com")');
+                tran.executeSql('insert into Users (id, Name, MailID) values (3, "Ansu","ansary.ans21@gmail.com")');
+            });
+            myDBInstance.transaction(function (tran) {
+                var html = '<table><thead><th>Mail ID </th><th>ID</th><th>Name </th></thead><tbody>';
+                tran.executeSql('SELECT * FROM Users', [], function (tran, data) {
+                    for (i = 0; i < data.rows.length; i++) {
+                        html += '<tr><td>'
+                            + '<a ' + 'href="mailto:' + data.rows[i].MailID + '">' + data.rows[0].MailID + '</a>' +
+                        '</td><td>' + data.rows[i].id + '</td><td>' + data.rows[i].Name + '</td></tr>';
+                    };
+                    html += '</tbody></table>';
+                    $('#myTab').html(html);
+                });
+            });
+        }
+
+    </script>
+    <style>
+        table,tr,td,th {
+            border:1px solid #ccc;
+            border-radius:5px;
+            padding:10px;
+            margin:10px;
+        }
+ 
+    </style>
+</head>
 <body>
-
-<h2>The XMLHttpRequest Object</h2>
-
-<form action=""> 
-  <select name="customers" onchange="showCustomer(this.value)">
-    <option value="">Select a customer:</option>
-    <option value="ALFKI">Alfreds Futterkiste</option>
-    <option value="NORTS ">North/South</option>
-    <option value="WOLZA">Wolski Zajazd</option>
-  </select>
-</form>
-<br>
-<div id="txtHint">Customer info will be listed here...</div>
-
-<script>
-function showCustomer(str) {
-  var xhttp;  
-  if (str == "") {
-    document.getElementById("txtHint").innerHTML = "";
-    return;
-  }
-  xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("txtHint").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "getcustomer.asp?q="+str, true);
-  xhttp.send();
-}
-</script>
+    <div id="myTab"></div>
 </body>
 </html>
